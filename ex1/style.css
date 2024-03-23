@@ -1,0 +1,44 @@
+body {
+    height: 600px;
+    width: 600px;
+}
+button {
+    height: 60px;
+    font-size:xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px black solid;
+}
+button:hover {
+    background-color: aqua;
+}
+button:active {
+    background-color: purple;
+}
+#display {
+    height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px black solid;
+}
+#display p {
+    height: 10px;
+    margin: 0px;
+}
+#mode {
+    height: 10px;
+    text-align: right;
+    font-size: small;
+}
+
+#value {
+    text-align: right;
+    font-size:xx-large;
+}
+
+#keys-wrapper {
+    margin: 30px;
+    display: grid;
+    /* grid-template-columns: repeat(1fr, 4); */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
