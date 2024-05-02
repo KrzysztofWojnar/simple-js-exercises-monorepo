@@ -2,7 +2,7 @@ import { updateDisplay } from './updateDisplay';
 import { getDisplayContent, setDisplayContent } from './displayHandler';
 import calculate from './calculate';
 import './style.css';
-document.getElementById('app').innerHTML = '<p id="mode"></p><div id="display"><p id="value">2137</p></div><div id="keys-wrapper"></div>'
+document.getElementById('app').innerHTML = '<p id="mode"></p><div id="display"><p id="value">2137</p></div><div id="keys-wrapper"></div>';
 const digit = 'digit';
 const operator = 'operator';
 const keysWrapper = document.getElementById('keys-wrapper');
@@ -58,5 +58,5 @@ Array.from(
 document.getElementById('calculate').addEventListener('click', () => {
     const [operand1, ...operator] = document.getElementById('mode').innerText.split(' ');
     setDisplayContent(calculate(operand1, operator.join(' '), getDisplayContent()));
-    document.getElementById('mode').innerText = ''
+    document.getElementById('mode').innerText = '';
 });
